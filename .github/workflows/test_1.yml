@@ -9,9 +9,12 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Hola mundo"
-
+      - name: touch file
+        run: touch hola.txt
+      - name: set file
+        run: echo "hola mundo" >> hola.txt
       - name: read file
-        run: cat README.md
+        run: cat hola.txt
 
 
   other:
