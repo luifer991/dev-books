@@ -9,8 +9,7 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Hola mundo"
-      - name: readme.md
-        run: sed -i '3s/$/ Texto a agregar/' README.md
+
       - name: read file
         run: cat README.md
 
